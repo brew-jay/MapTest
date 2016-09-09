@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+<title>TW Map Test</title>
+<style>
+
+    body{
+        background-color:#4f5862;
+    }
+    .country{
+        fill: #21cc9e;
+    }
+    .country:hover{
+        stroke: #fff;
+        stroke-width: .7px;
+        fill: #50b3df;
+    }
+
+    .hidden {
+        display: none;
+    }
+    div.tooltip {
+        color: #222;
+        background: #fff;
+        padding: .5em;
+        text-shadow: #f5f5f5 0 1px 0;
+        border-radius: 2px;
+        box-shadow: 0px 0px 2px 0px #a6a6a6;
+        opacity: 0.9;
+        position: absolute;
+    }
+</style>
+
+</head>
+<body>
+
+<select id="CountrySelect">
+    <option default>Select</option>
+    <option value="D826">United Kingdom</option>
+    <option value="D533"> Aruba </option>
+    <option value="D4"> Afghanistan </option>
+    <option value="D40"> Austria </option>
+</select>
+
+<div id="container"></div>
+
+<script src="d3.min.js"></script>
+<script src="topojson.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
